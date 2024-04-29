@@ -24,8 +24,6 @@ steps:
       PathtoPublish: '$(Build.ArtifactStagingDirectory)'
       ArtifactName: 'drop'
       publishLocation: 'Container'
-  - script: 
-      docker buildx build -t hello_app/python:v1 .
 
   - script: |
       pip install pytest pytest-azurepipelines
